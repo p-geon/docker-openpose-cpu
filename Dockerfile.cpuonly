@@ -6,10 +6,10 @@ LABEL version="1.0"
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-RUN apt-get update -y && \
-    apt-get upgrade -y && \
-    apt-get install wget apt-utils lsb-core cmake git -y && \
-    apt-get install libopencv-dev -y
+RUN apt-get update -y 
+RUN apt-get upgrade -y
+RUN apt-get install wget apt-utils lsb-core cmake git -y
+RUN apt-get install libopencv-dev -y
 
 RUN git clone https://github.com/CMU-Perceptual-Computing-Lab/openpose.git
 
